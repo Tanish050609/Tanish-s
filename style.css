@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.navbar {
+    height: 100px;
+    background-color:lavender;
+}
+.navcontainer {
+     display: flex;
+     align-items: center;
+}
+.navlogo {
+    background-image: url(ts\ 2.png);
+    background-size: cover;
+    height: 100px;
+    width :250px;
+    margin-left: 550px;
+}
+.story {
+    height: 240px;
+    width: 250px;
+    margin-top: 50px;
+    margin-left: 550px;
+    border: solid 2px black;
+    border-radius: 25%;
+    background-color: #ccccff; 
+    text-align: center;
+    justify-content: center;  /* horizontal center */
+    align-items: center;
+    display: flex;
+    animation: floatUpDown 2s ease-in-out infinite;
+}
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Moves up */
+  }
+}
